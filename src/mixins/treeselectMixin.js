@@ -237,11 +237,10 @@ export default {
 
     /**
      * Whether to close the menu after selecting an option?
-     * Use only when `multiple` is `true`.
      */
     closeOnSelect: {
       type: Boolean,
-      default: true,
+      default: false,
     },
 
     /**
@@ -1811,7 +1810,7 @@ export default {
         this.resetSearchQuery()
       }
 
-      if (this.single && this.closeOnSelect) {
+      if (this.closeOnSelect) {
         this.closeMenu()
 
         // istanbul ignore else
