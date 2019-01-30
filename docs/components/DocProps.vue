@@ -128,8 +128,8 @@
       }, {
         name: 'closeOnSelect',
         type: 'Boolean',
-        defaultValue: code('true'),
-        description: `Whether to close the menu after selecting an option. Use only when ${code(':multiple="true"')}.`,
+        defaultValue: code('false'),
+        description: `Whether to close the menu after selecting an option.`,
       }, {
         name: 'defaultExpandLevel',
         type: 'Number',
